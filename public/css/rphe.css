@@ -449,6 +449,13 @@ header.who-we-are {
 
 .product-slider #thumbcarousel .item .thumb:hover { border-color: #1089c0; }
 
+.image-thumb {
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
 .product-slider .item img { width: 100%; height: auto; }
 
 .carousel-control { color: #0284b8; text-align: center; text-shadow: none; font-size: 30px; width: 30px; height: 30px; line-height: 20px; top: 23%; }
