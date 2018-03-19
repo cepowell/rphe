@@ -4,7 +4,7 @@ Roatán Peer Health Exchange is a Honduran-based reproductive peer health progra
 
 ---
 ## Get Involved
- - Email us <roatanpeerhealthexchange@gmail.com>
+ - Email us at <roatanpeerhealthexchange@gmail.com>
  - Donate at our [Generosity page](https://www.generosity.com/medical-fundraising/empowering-women-women-s-health-day-fair)
  - Visit our [Amazon wishlist](https://www.amazon.com/registry/giftlist/2PS3APN8RQM2J/ref=cm_sw_r_cp_ep_ukn_0lcUzbCGYKWZQ)
  - Connect with us on [Facebook](https://www.facebook.com/roatanpeerhealthexchange/) or [Instagram](https://www.instagram.com/roatanpeerhealthexchange/)
