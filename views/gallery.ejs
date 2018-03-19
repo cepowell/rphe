@@ -55,8 +55,8 @@
         <!-- Carousel thumbnails -->
         <div class="clearfix">
           <div id="thumbcarousel" class="carousel slide" data-interval="false" style="width: 100%;">
-            <div class="carousel-inner" style="background-color: #D3D3D3; border-radius: 25px;">
-              <div style="width: 550px; margin: 0 auto;">
+            <div class="carousel-inner thumbnail-inner">
+              <div class="thumbnail-box">
                 <div class="carousel-item active">
                   <% images.slice(0, 5).forEach(function(image) { %>
                     <span data-target="#carousel-gallery" data-slide-to=<%= image.index - 1 %> class="thumb"><img src=<%= image.url %> class="image-thumb"></span>
