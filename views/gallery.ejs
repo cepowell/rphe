@@ -28,100 +28,18 @@
       </div>
     </section>
 
+    <!-- Image carousel -->
     <section>
       <div class="container">
         <div id="carousel-gallery" class="carousel" data-ride="carousel" data-interval="false">
           <div class="carousel-inner" role="listbox">
-            <div class="carousel-item carousel-img-container active">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel1.png" alt="First slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel2.jpg" alt="Second slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel3.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel4.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel5.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel6.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel7.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel8.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel9.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel10.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel11.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel12.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel13.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel4.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel15.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel16.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel17.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel18.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel19.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel20.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel21.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel22.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel23.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel24.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel25.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel26.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel27.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel28.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel29.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item carousel-img-container">
-              <img class="img-fluid carousel-img" src="img/carousel/carousel30.jpg" alt="Third slide">
-            </div>
+            <% images.forEach(function(image) { %>
+              <div
+                <% if (image.index == 1) { %> class="carousel-item carousel-img-container active" /> <% } %>
+                <% if (image.index !== 1) { %> class="carousel-item carousel-img-container" /> <% } %>
+                <img class="img-fluid carousel-img" src=<%= image.url %> alt="Slide number <%= image.index %>" />
+              </div>
+            <% }); %>
           </div>
           <a class="carousel-control-prev" href="#carousel-gallery" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon carousel-icon" aria-hidden="true"></span>
@@ -133,51 +51,41 @@
           </a>
         </div>
         <br/>
+
+        <!-- Carousel thumbnails -->
         <div class="clearfix">
           <div id="thumbcarousel" class="carousel slide" data-interval="false" style="width: 100%;">
             <div class="carousel-inner" style="background-color: #D3D3D3; border-radius: 25px;">
               <div style="width: 550px; margin: 0 auto;">
                 <div class="carousel-item active">
-                  <span data-target="#carousel-gallery" data-slide-to="0" class="thumb"><img src="img/carousel/carousel1.png" class="image-thumb"></span>
-                  <span data-target="#carousel-gallery" data-slide-to="1" class="thumb"><img src="img/carousel/carousel2.jpg" class="image-thumb"></span>
-                  <span data-target="#carousel-gallery" data-slide-to="2" class="thumb"><img src="img/carousel/carousel3.jpg" class="image-thumb"></span>
-                  <span data-target="#carousel-gallery" data-slide-to="3" class="thumb"><img src="img/carousel/carousel4.jpg" class="image-thumb"></span>
-                  <span data-target="#carousel-gallery" data-slide-to="4" class="thumb"><img src="img/carousel/carousel5.jpg" class="image-thumb"></span>
+                  <% images.slice(0, 5).forEach(function(image) { %>
+                    <span data-target="#carousel-gallery" data-slide-to=<%= image.index - 1 %> class="thumb"><img src=<%= image.url %> class="image-thumb"></span>
+                  <% }); %>
                 </div>
                 <div class="carousel-item">
-                  <span data-target="#carousel-gallery" data-slide-to="5" class="thumb"><img src="img/carousel/carousel6.jpg" class="image-thumb"></span>
-                  <span data-target="#carousel-gallery" data-slide-to="6" class="thumb"><img src="img/carousel/carousel7.jpg" class="image-thumb"></span>
-                  <span data-target="#carousel-gallery" data-slide-to="7" class="thumb"><img src="img/carousel/carousel8.jpg" class="image-thumb"></span>
-                  <span data-target="#carousel-gallery" data-slide-to="8" class="thumb"><img src="img/carousel/carousel9.jpg" class="image-thumb"></span>
-                  <span data-target="#carousel-gallery" data-slide-to="9" class="thumb"><img src="img/carousel/carousel10.jpg" class="image-thumb"></span>
+                  <% images.slice(5, 10).forEach(function(image) { %>
+                    <span data-target="#carousel-gallery" data-slide-to=<%= image.index - 1 %> class="thumb"><img src=<%= image.url %> class="image-thumb"></span>
+                  <% }); %>
                 </div>
                 <div class="carousel-item">
-                  <span data-target="#carousel-gallery" data-slide-to="10" class="thumb"><img src="img/carousel/carousel11.jpg" class="image-thumb"></span>
-                  <span data-target="#carousel-gallery" data-slide-to="11" class="thumb"><img src="img/carousel/carousel12.jpg" class="image-thumb"></span>
-                  <span data-target="#carousel-gallery" data-slide-to="12" class="thumb"><img src="img/carousel/carousel13.jpg" class="image-thumb"></span>
-                  <span data-target="#carousel-gallery" data-slide-to="13" class="thumb"><img src="img/carousel/carousel14.jpg" class="image-thumb"></span>
-                  <span data-target="#carousel-gallery" data-slide-to="14" class="thumb"><img src="img/carousel/carousel15.jpg" class="image-thumb"></span>
+                  <% images.slice(10, 15).forEach(function(image) { %>
+                    <span data-target="#carousel-gallery" data-slide-to=<%= image.index - 1 %> class="thumb"><img src=<%= image.url %> class="image-thumb"></span>
+                  <% }); %>
                 </div>
                 <div class="carousel-item">
-                  <span data-target="#carousel-gallery" data-slide-to="15" class="thumb"><img src="img/carousel/carousel16.jpg" class="image-thumb"></span>
-                  <span data-target="#carousel-gallery" data-slide-to="16" class="thumb"><img src="img/carousel/carousel17.jpg" class="image-thumb"></span>
-                  <span data-target="#carousel-gallery" data-slide-to="17" class="thumb"><img src="img/carousel/carousel18.jpg" class="image-thumb"></span>
-                  <span data-target="#carousel-gallery" data-slide-to="18" class="thumb"><img src="img/carousel/carousel19.jpg" class="image-thumb"></span>
-                  <span data-target="#carousel-gallery" data-slide-to="19" class="thumb"><img src="img/carousel/carousel20.jpg" class="image-thumb"></span>
+                  <% images.slice(15, 20).forEach(function(image) { %>
+                    <span data-target="#carousel-gallery" data-slide-to=<%= image.index - 1 %> class="thumb"><img src=<%= image.url %> class="image-thumb"></span>
+                  <% }); %>
                 </div>
                 <div class="carousel-item">
-                  <span data-target="#carousel-gallery" data-slide-to="20" class="thumb"><img src="img/carousel/carousel21.jpg" class="image-thumb"></span>
-                  <span data-target="#carousel-gallery" data-slide-to="21" class="thumb"><img src="img/carousel/carousel22.jpg" class="image-thumb"></span>
-                  <span data-target="#carousel-gallery" data-slide-to="22" class="thumb"><img src="img/carousel/carousel23.jpg" class="image-thumb"></span>
-                  <span data-target="#carousel-gallery" data-slide-to="23" class="thumb"><img src="img/carousel/carousel24.jpg" class="image-thumb"></span>
-                  <span data-target="#carousel-gallery" data-slide-to="24" class="thumb"><img src="img/carousel/carousel25.jpg" class="image-thumb"></span>
+                  <% images.slice(20, 25).forEach(function(image) { %>
+                    <span data-target="#carousel-gallery" data-slide-to=<%= image.index - 1 %> class="thumb"><img src=<%= image.url %> class="image-thumb"></span>
+                  <% }); %>
                 </div>
                 <div class="carousel-item">
-                  <span data-target="#carousel-gallery" data-slide-to="25" class="thumb"><img src="img/carousel/carousel26.jpg" class="image-thumb"></span>
-                  <span data-target="#carousel-gallery" data-slide-to="26" class="thumb"><img src="img/carousel/carousel27.jpg" class="image-thumb"></span>
-                  <span data-target="#carousel-gallery" data-slide-to="27" class="thumb"><img src="img/carousel/carousel28.jpg" class="image-thumb"></span>
-                  <span data-target="#carousel-gallery" data-slide-to="28" class="thumb"><img src="img/carousel/carousel29.jpg" class="image-thumb"></span>
-                  <span data-target="#carousel-gallery" data-slide-to="29" class="thumb"><img src="img/carousel/carousel30.jpg" class="image-thumb"></span>
+                  <% images.slice(25, 30).forEach(function(image) { %>
+                    <span data-target="#carousel-gallery" data-slide-to=<%= image.index - 1 %> class="thumb"><img src=<%= image.url %> class="image-thumb"></span>
+                  <% }); %>
                 </div>
               </div>
             </div>

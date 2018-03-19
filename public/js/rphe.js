@@ -1,5 +1,5 @@
 (function($) {
-  "use strict"; // Start of use strict
+  "use strict";
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
@@ -28,6 +28,7 @@
       $("#mainNav").removeClass("navbar-shrink");
     }
   };
+  
   // Collapse now if page is not at top
   navbarCollapse();
   // Collapse the navbar when page is scrolled
@@ -41,4 +42,4 @@
     $(".navbar").removeClass("d-none");
   })
 
-})(jQuery); // End of use strict
+})(jQuery);

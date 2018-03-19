@@ -23,47 +23,32 @@
         </div>
         <div class="row">
           <div class="col-lg-10 offset-lg-1">
-            <p style="text-align: justify;">
+            <p style="text-align: center;">
               Read the incredible stories of the individuals involved with Roatàn Peer Health Exchange.
           </div>
         </div>
       </div>
     </section>
 
-    <section class="bg-light" id="stories">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/trudy.jpeg" alt="">
-              <h4>Name</h4>
-              <p class="text-muted">Brief Summary</p>
+    <!-- Stories -->
+    <% stories.forEach(function(story) { %>
+      <section <% if (story.index % 2 == 1) {%> class="bg-light" <%}%> >
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="team-member">
+                <img class="mx-auto" style="border-radius: 15px;" src=<%= story.picture %> />
+                <h4><%= story.name %></h4>
+                <p class="text-muted"><%= story.summary %></p>
+              </div>
             </div>
           </div>
-          <div class="col-sm-6">
-            Story!
+          <div class="row bio">
+            <%= story.bio %>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            Story #2!
-          </div>
-          <div class="col-sm-6">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/trudy.jpeg" alt="">
-              <h4>Name #2</h4>
-              <p class="text-muted">Brief Summary</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+      </section>
+    <% }); %>
 
     <% include ./partials/footer %>
 
