@@ -1,0 +1,112 @@
+var english_home = {
+  heading: 'We Are',
+  missionHeader: 'Our Mission',
+  missionText: 'Roatán Peer Health Exchange is a Honduran-based reproductive peer health program that empowers young people to live healthy lives. With no reproductive health education in the entire region and limited access to health resources, the teenage pregnancy and STD rates are extremely high. Our organization provides accurate, non-denominational reproductive health lessons to the most marginalized regions.',
+  leadershipHeader: 'Leadership',
+  leadershipText: 'Our organization, in defiance of the heavily entrenched gender norms of Honduras, was founded by five women. All have equal say in program development and financial decision making. Our regional director, Trudy Hilton, is a product of the community where we hold the majority of our charlas, and she also serves as assistant director of the island’s only HIV clinic. Daniela Brissett, a senior U.S. medical student and soon-to-be pediatrician, has transitioned the majority of her local administrative roles to the Honduran team, and she and the rest of the U.S. team develop reproductive health policy and bring their experience working for similar programs in the U.S. Our Honduran medical students ensure that the program’s curriculum is culturally appropriate and are pivotal in recruitment of volunteers, community partners, and resources.',
+  reachHeader: 'Reach',
+  reachText: 'Our program operates within the community and includes 10 peer health ambassadors who teach nearly 80 unique youth each month, and 10 medical students who mentor the peer health ambassadors. 50 to 80 women attend each of our health fairs and, at minimum, nearly 500 participants are served monthly by our organization.',
+  impactHeader: 'Measuring Impact',
+  impactText: '  Our peer health ambassadors and community youth are surveyed at the completion of the 12 week program, and we gather data on number of visits to a health center, knowledge of how to access contraceptives, and contraceptive use among participants. We also partner with the public health system to monitor the monthly teenage pregnancy and STD rates. Additionally, we conduct weekly program evaluations and, at the end of each mentorship, our medical students are evaluated by our peer health ambassadors, who are in turn evaluated by the medical students and community members. This allows us to determine how we can improve and to create a fun and comfortable atmosphere for learning.',
+  announcementsHeader: 'Announcements and News',
+  announcementsList: [
+    { item: "Our next Women's Health Day (pictures from our previous events are below) is scheduled For October 2017. Please return for more details and how you can help." },
+    { item: 'On September 30, 2017, our U.S. Community Liason Brittany Morgan attended the Spark Benefit. Photos and interview to come.',
+      url: 'img/benefit.jpg'
+    },
+    { item: 'We are excited to announce we were invited to the 2017 Clinton Global Initiative!',
+      url: 'img/clinton.jpg',
+      linkText1: 'Learn more',
+      linkText2: 'here',
+      link: 'https://www.clintonfoundation.org/clinton-global-initiative',
+    },
+  ],
+  teamHeader: 'Join Our Team',
+  teamText: {
+    text1: 'Email us at',
+    text2: 'if you think you might be a good fit for one of our open roles!'
+  },
+  teamSubtext: {
+    text1: 'Or, apply to be a fellow',
+    hrefText: 'here',
+  },
+  openPositions: [
+    { title: 'Health Care Professionals',
+      lookingForHeader: 'Looking For',
+      lookingForText: 'Motivated and passionate health professionals (pre-graduate, residents, doctors, nurses, and more) to help with teaching our peer health ambassadors, improving our curriculum, and/or finding health resources such as condoms or sexual health educational tools.',
+      timeHeader: 'Time Commitment',
+      timeText: 'FLEXIBLE',
+      interestedHeader: 'Interested',
+      interestedText: 'Please send us an email with your availability, proposed contribution, and best ways to get in touch.',
+      extraColumn: true,
+    },
+    { title: 'Visiting Roatán?',
+      lookingForHeader: 'Looking For',
+      lookingForText: "Due to high shipping costs we always need to bring resources down to the island, either for us or for our community partners. Also, come visit us! Help plan fun activities around the island while working with our students. Can't make to the island? That's okay! We receive the bulk of our donations from volunteers like you! Rallying your local communities to donate.",
+      timeHeader: 'Time Commitment',
+      timeText: 'FLEXIBLE',
+      interestedHeader: 'Interested',
+      interestedText: 'Please send us an email with your availability, proposed contribution, and best ways to get in touch.',
+      extraColumn: false,
+    },
+  ],
+};
+
+var spanish_home = {
+  heading: 'Nosotros Somos',
+  missionHeader: 'Nuestra Misión',
+  missionText: 'Roatan Peer Health Exchange es una organización que empodera a los jóvenes con el conocimiento, habilidades y recursos para tomar decisiones saludables.',
+  leadershipHeader: 'Liderazgo',
+  leadershipText: 'Nuestra organización define fuertemente las íntricas normas de género en Honduras hasta el momento y fue creada por 5 mujeres. Todas tienen igualdad en lo que se dice en el desarrollo del programa y las decisiones financieras. Hay una directora regional, Trudy Hilton, quien es producto de la comunidad donde dirijimos la mayoría de nuestras charlas.' +
+  'Trudy también sirve como Directora asistente de la única clinica de VIH de la isla. Con este programa, ella continua su trabajo de defense de la comunidad en esperanzas de disminuir el estigma en su comunidad, particularmente con su generación más impressionable y joven. Daniela Brisset, estudiante de medicina de Estados Unidos y future pediatra. Ha transicionado la mayoría de sus roles administrativos locales al equipo en Honduras. Ella y el resto del equipo en Estados Unidos traen consigo experiencia al haber trabajado con programas similares en EU, en adición a desarrollar políticas de salud reproductive. Los estudiantes de Medicina hondureños que son testigos de las increibles altas tasas de embarazos adolescentes, sus complicaciones y ETS, todos los días. Ellos se aseguran que el curriculum del programa sea culturalmente apropiado, y son clave en el reclutamiento de voluntarios, compañeros en la comunidad y recursos.',
+  reachHeader: 'Alcance',
+  reachText: 'Para deshacerse de mitos sobre planificación familiar y promover estilos de vida saludables, nuestro programa opera entre la comunidad. Hay aproximadamente 10 Embajadores de salud en pares que enseñan a casi 80 jóvenes unicos cada mes. 10 estudiantes de Medicina que sirven de mentores para los embajadores, aprendiendo a comunicarse (e.j. usando menos jerga médica, actividades divertidas) y como resultado conectar con la comunidad. 50-80 mujeres atienden nuestras ferias de salud. Basados en evidencia por anécdotas, conjeturamos que 1 participante tiene la habilidad de diseminar información proveida en nuestros eventos, a 5-10 personas. Como mínimo cerca de 500 participantes son servidos cada mes por nuestra organización.',
+  impactHeader: 'Midiendo El Impacto',
+  impactText: 'Para poder medir el impacto en nuestra comunidad, nuestros embajadores de salud en pares y los jóvenes dentro de la comunidad son encuestados al cumplir las 12 semanas del programa. Mediciones incluyen: número de visitas al centro de salud, conocimiento de como accesar a contraceptivos y el uso de contraceptivos entre los participantes. A nuestros Embajadores de salud en pares también se les pide hacer una presentación a los miebros de la escuela y/o' +
+  'padres al completer el curso de 12 semanas. Dado que tenemos ferias de salud cada mes que mejorar nuestro involucramiento en la comunidad, para detector el impacto de nuestro programa en la comunidad nos hemos unido con el Sistema de salud pública para monitorizar mensualmente las tasas de embarazos adolescentes y ETS. También conducimos evaluaciones del programa cada semana para asegurarnos que el programa este cumpliendo con los estandares de todos los que están involucrados- desde miembros de la comunidad hasta los voluntarios de nuestro programa. All final de casa sesión, nuestros estudiantes de medicina y comunidad evalúan a los embajadores de salud en pares al final de la charla para asegurarse el entendimiento del tema y las mejoras necesarias, y asegurar una atmósfera cómoda para aprender.',
+  announcementsHeader: 'Anuncios',
+  announcementsList: [
+    { item: "Nuestro próximo dia de la salud de la mujer (fotos de nuestros eventos anteriores están abajo) esta programado para Octubre 2017. Por favor regresa para más detalles y como puedes ayudar." },
+    { item: 'En Septiembre 30 del 2017 nuestro Enlace Comunitario en EUA Brittany Morgan atendió el Spark Benefit. Fotos y entrevistas pronto.',
+      url: 'img/benefit.jpg'
+    },
+    { item: 'Estamos emocionados de anunciar que fuimos invitados a la Iniciativa Global Clinton 2017!',
+      url: 'img/clinton.jpg',
+      linkText1: 'Aprende mas dándole',
+      linkText2: 'aqui',
+      link: 'https://www.clintonfoundation.org/clinton-global-initiative',
+    },
+  ],
+  teamHeader: 'Se Parte De Nuestro Equipo',
+  teamText: {
+    text1: 'Mándanos un correo electrónico a la dirección',
+    text2: 'si quieres hacerse socio de nuestro equipo.',
+  },
+  teamSubtext: {
+    text1: 'O aplicar para ser un compañero',
+    hrefText: 'aqui',
+  },
+  openPositions: [
+    { title: 'Profesionales de la salud',
+      lookingForHeader: 'Buscando',
+      lookingForText: 'Estamos buscando a profesionales de salud motivados y apasionados para ayudar con la enseñanza a nuestros embajadores de salud en pares, mejorando nuestro curriculum, y/o encontrando recursos como condones o herramientas de educación de salud sexual.',
+      timeHeader: 'Compromiso de tiempo',
+      timeText: 'FLEXIBLE',
+      interestedHeader: 'Interasado/a',
+      interestedText: 'Por favor mándanos un correo electrónico, con tu disponibilidad, contribución propuesta y la mejor manera de comunicarnos contigo.',
+      extraColumn: true,
+    },
+    { title: 'Visitar Roatán?',
+      lookingForHeader: 'Buscando',
+      lookingForText: "Debido a los altos costos de envoi, siempre necesitamos traer recursos a la isla para nosotros o nuestros socios comunitarios. También, ven a visitarnos! Ayudanos a planear actividades alrededor de la isla, mientras trabajamos con los estudiantes. No puedes ir a la isla? Esta bien! Recibimos la mayoría de nuestras donaciones de voluntarios como tú! Moviendo a tu comunidad local a donar.",
+      timeHeader: 'Compromiso de tiempo',
+      timeText: 'FLEXIBLE',
+      interestedHeader: 'Interasado/a',
+      interestedText: 'Por favor mándanos un correo electrónico, con tu disponibilidad, contribución propuesta y la mejor manera de comunicarnos contigo.',
+      extraColumn: false,
+    },
+  ],
+};
+
+exports.english_home = english_home;
+exports.spanish_home = spanish_home;

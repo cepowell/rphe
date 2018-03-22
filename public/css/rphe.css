@@ -129,6 +129,16 @@ body {
         font-size: 1.25em;
         padding: 12px 0; } }
 
+.language-dropdown {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.language-option {
+  font-size: 12px;
+  font-weight: lighter;
+}
+
 /* HOMEPAGE HEADER STYLES */
 header.masthead {
   text-align: center;
@@ -487,3 +497,12 @@ footer {
     margin-bottom: 0;
     text-transform: none;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+.cait-credit {
+  font-size: 80%;
+  font-weight: 400;
+  padding: 0.75em 0;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}

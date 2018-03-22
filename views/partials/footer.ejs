@@ -3,12 +3,16 @@
   <div class="container">
     <div class="row" style="padding-bottom:30px;";>
       <div class="col-lg-12 text-center">
-        <h4 class="section-subheading text-muted">Connect With Us!</h4>
+        <h4 class="section-subheading text-muted"><%= footer.connect %></h4>
       </div>
     </div>
     <div class="row" style="padding-bottom:30px;">
       <div class="col-md-4">
-        <button class="btn btn-primary btn-lg text-uppercase"><a href="https://www.generosity.com/medical-fundraising/empowering-women-women-s-health-day-fair" style="color:white;">Generosity Page</a></button>
+        <button class="btn btn-primary btn-lg text-uppercase">
+          <a href="https://www.generosity.com/medical-fundraising/empowering-women-women-s-health-day-fair" style="color:white;">
+            <%= footer.generosity %>
+          </a>
+        </button>
       </div>
       <div class="col-md-4">
         <ul class="list-inline social-buttons">
@@ -32,9 +36,14 @@
       <div class="col-md-4">
         <button class="btn btn-primary btn-lg text-uppercase">
           <a href="https://www.amazon.com/registry/giftlist/2PS3APN8RQM2J/ref=cm_sw_r_cp_ep_ukn_0lcUzbCGYKWZQ" style="color:white;">
-            Amazon Wishlist
+            <%= footer.wishlist %>
           </a>
         </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <span class="cait-credit"> <%= footer.credits %> <a href="https://cepowell.github.io/">Cait Powell</a></span>
       </div>
     </div>
   </div>

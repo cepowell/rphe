@@ -1,13 +1,28 @@
 var express = require('express');
 var app = express();
 var port = process.env.PORT || 3000;
+var homeData = require('./public/js/data/home');
+var navData = require('./public/js/data/navigation');
+var footerData = require('./public/js/data/footer');
 
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res) {
-  res.render('index');
+  res.render('index', {
+    data: homeData.english_home,
+    nav: navData.english_nav,
+    footer: footerData.english_footer,
+  });
+});
+
+app.get('/sp', function(req, res) {
+  res.render('index', {
+    data: homeData.spanish_home,
+    nav: navData.spanish_nav,
+    footer: footerData.spanish_footer,
+  });
 });
 
 app.get('/gallery', function(req, res) {
@@ -45,11 +60,16 @@ app.get('/gallery', function(req, res) {
   ];
   res.render('gallery', {
     images: images,
+    nav: navData.english_nav,
+    footer: footerData.english_footer,
   });
 });
 
 app.get('/what-we-do', function(req, res) {
-  res.render('what-we-do');
+  res.render('what-we-do', {
+    nav: navData.english_nav,
+    footer: footerData.english_footer,
+  });
 });
 
 app.get('/who-we-are', function(req, res) {
@@ -93,7 +113,9 @@ app.get('/who-we-are', function(req, res) {
   ];
   res.render('who-we-are', {
     bios: bios,
-    partners: partners
+    partners: partners,
+    nav: navData.english_nav,
+    footer: footerData.english_footer,
   });
 });
 
@@ -113,7 +135,9 @@ app.get('/stories', function(req, res) {
     }
   ];
   res.render('stories', {
-    stories: stories
+    stories: stories,
+    nav: navData.english_nav,
+    footer: footerData.english_footer,
   });
 });
 

@@ -12,7 +12,7 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in">We Are</div>
+          <div class="intro-lead-in"><%= data.heading %></div>
           <div class="intro-heading text-uppercase">Roatán Peer<br>Health Exchange</div>
         </div>
       </div>
@@ -23,8 +23,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Our Mission</h2>
-            <h3 class="section-subheading text-muted" style="text-align: justify;">Roatán Peer Health Exchange is a Honduran-based reproductive peer health program that empowers young people to live healthy lives. With no reproductive health education in the entire region and limited access to health resources, the teenage pregnancy and STD rates are extremely high. Our organization provides accurate, non-denominational reproductive health lessons to the most marginalized regions.</h3>
+            <h2 class="section-heading text-uppercase"><%= data.missionHeader %></h2>
+            <h3 class="section-subheading text-muted" style="text-align: justify;"><%= data.missionText %></h3>
           </div>
         </div>
         <div class="row text-center">
@@ -33,24 +33,30 @@
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-handshake-o fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="mission-heading">Leadership</h4>
-            <% include ./text/leadership %>
+            <h4 class="mission-heading"><%= data.leadershipHeader %></h4>
+            <p class="text-muted" style="text-align: justify;">
+              <%= data.leadershipText %>
+            </p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-users fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="mission-heading">Reach</h4>
-            <% include ./text/reach %>
+            <h4 class="mission-heading"><%= data.reachHeader %></h4>
+            <p class="text-muted" style="text-align: justify;">
+              <%= data.reachText %>
+            </p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="mission-heading">Measuring Impact</h4>
-            <% include ./text/impact %>
+            <h4 class="mission-heading"><%= data.impactHeader %></h4>
+            <p class="text-muted" style="text-align: justify;">
+              <%= data.impactText %>
+            </p>
           </div>
         </div>
       </div>
@@ -64,25 +70,26 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h3 class="section-heading text-uppercase">Announcements and News</h3>
+            <h3 class="section-heading text-uppercase"><%= data.announcementsHeader %></h3>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
             <ul style="font-size: 20px; padding-top: 10px;">
-              <li>
-                <p>Our next Women's Health Day (pictures from our previous events are below) is scheduled For October 2017.
-                  Please return for more details and how you can help.</p>
-              </li>
-              <li style="text-align: center;">
-                <p style="text-align: left">On September 30, 2017, our U.S. Community Liason Brittany Morgan attended the Spark Benefit. Photos and interview to come.</p>
-                <img src="img/benefit.jpg" style="height: 300px; border-radius: 25px; padding-top: 10px;"/>
-              </li>
-              </br>
-              <li style="text-align: center;">
-                <p style="text-align: left">We are excited to announce we were invited to the 2017 Clinton Global Initiative! Learn more <a href="https://www.clintonfoundation.org/clinton-global-initiative">here</a>.</p>
-                <img src="img/clinton.jpg" style="height: 300px; border-radius: 25px; padding-top: 10px;"/>
-              </li>
+              <% data.announcementsList.forEach(function(announcement) { %>
+                <li style="text-align: center;">
+                  <p style="text-align: left">
+                    <%= announcement.item %>
+                    <% if (announcement.link) { %>
+                      <%= announcement.linkText1 %> <a href=<%= announcement.link %>> <%= announcement.linkText2 %></a>.
+                    <% } %>
+                  </p>
+                  <% if (announcement.url) { %>
+                    <img src=<%= announcement.url %> style="height: 300px; border-radius: 25px; padding-top: 10px;"/>
+                  <% } %>
+                </li>
+                </br>
+              <% }); %>
             </ul>
           </div>
         </div>
@@ -97,42 +104,36 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h3 class="section-heading text-uppercase">Join Our Team</h3>
+            <h3 class="section-heading text-uppercase"><%= data.teamHeader %></h3>
             <h3 class="section-subheading text-muted text-center" style="text-align: justify;">
-              Email us at <a href="mailto:roatanpeerhealthexchange@gmail.com">roatanpeerhealthexchange@gmail.com</a> if you think you might be a good fit for one of our open roles!
+              <%= data.teamText.text1 %> <a href="mailto:roatanpeerhealthexchange@gmail.com">roatanpeerhealthexchange@gmail.com</a> <%= data.teamText.text2 %>
             </h3>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-5" style="text-align:justify;">
-            <h5 style="text-align:center;">Health Care Professionals</h5>
-            <p>
-              <b>​Looking For:</b> Motivated and passionate health professionals (pre-graduate, residents, doctors, nurses, and more) to help with teaching our peer health ambassadors, improving our curriculum, and/or finding health resources such as condoms or sexual health educational tools.
-              </br>
-              <b>Time Commitment:</b> FLEXIBLE
-              </br>
-              <b>Interested:</b> Please send us an email with your availability, proposed contribution, and best ways to get in touch.
-            </p>
-          </div>
-          <div class="col-md-2">
-          </div>
-          <div class="col-md-5" style="text-align:justify;">
-            <h5 style="text-align:center;">Visiting Roatán?</h5>
-            <p>
-              <b>​Looking For:</b> Due to high shipping costs we always need to bring resources down to the island, either for us or for our community partners. Also, come visit us! Help plan fun activities around the island while working with our students. Can't make to the island? That's okay! We receive the bulk of our donations from volunteers like you! Rallying your local communities to donate.
-              </br>
-              <b>Time Commitment:</b> FLEXIBLE
-              </br>
-              <b>Interested:</b> Please send us an email with your availability, proposed contribution, and best ways to get in touch.
-            </p>
-          </div>
+          <% data.openPositions.forEach(function(position) { %>
+            <div class="col-md-5" style="text-align:justify;">
+              <h5 style="text-align:center;"><%= position.title %></h5>
+              <p>
+                <b>​<%= position.lookingForHeader %>:</b> <%= position.lookingForText %>
+                </br>
+                <b>​<%= position.timeHeader %>:</b> ​<%= position.timeText %>
+                </br>
+                <b>​<%= position.interestedHeader %>:</b> ​<%= position.interestedText %>
+              </p>
+            </div>
+            <% if (position.extraColumn !== 1) { %>
+              <div class="col-md-2">
+              </div>
+            <% } %>
+          <% }); %>
         </div>
       </div>
       <br/>
       <div class="row">
         <div class="col-lg-12 text-center">
           <h3 class="section-subheading text-muted text-center" style="font-size: 20px; margin-bottom: 10px;">
-            Or, apply to be a fellow <a href="https://goo.gl/forms/bDd0JFN0SJxqpsRI2">here</a>.
+            <%= data.teamSubtext.text1 %> <a href="https://goo.gl/forms/bDd0JFN0SJxqpsRI2"><%= data.teamSubtext.hrefText %></a>.
           </h3>
         </div>
       </div>
