@@ -18,20 +18,20 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Our Stories</h2>
+            <h2 class="section-heading text-uppercase"><%= data.storiesHeader %></h2>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-10 offset-lg-1">
             <p style="text-align: center;">
-              Read the incredible stories of the individuals involved with Roatàn Peer Health Exchange.
+              <%= data.storiesSubtext %>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Stories -->
-    <% stories.forEach(function(story) { %>
+    <% data.bios.forEach(function(story) { %>
       <section <% if (story.index % 2 == 1) {%> class="bg-light" <%}%> >
         <div class="container">
           <div class="row">

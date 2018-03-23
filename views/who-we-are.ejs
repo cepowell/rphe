@@ -19,12 +19,12 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Our Team</h2>
-            <h3 class="section-subheading text-muted">Meet the leaders behind Roatán Peer Health Exchange.</h3>
+            <h2 class="section-heading text-uppercase"><%= data.team %></h2>
+            <h3 class="section-subheading text-muted"><%= data.teamSubtext %></h3>
           </div>
         </div>
         <div class="row">
-          <% bios.slice(0,2).forEach(function(member) { %>
+          <% data.bios.slice(0,2).forEach(function(member) { %>
             <div class="col-sm-6">
               <div class="team-member">
                 <img class="mx-auto rounded-circle" src=<%= member.picture %> />
@@ -36,7 +36,7 @@
           <% }); %>
         </div>
         <div class="row">
-          <% bios.slice(2,5).forEach(function(member) { %>
+          <% data.bios.slice(2,5).forEach(function(member) { %>
             <div class="col-sm-4">
               <div class="team-member">
                 <img class="mx-auto rounded-circle" src=<%= member.picture %> />
@@ -56,12 +56,12 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Our Community Partners</h2>
-            <h3 class="section-subheading text-muted">Meet the organizations who support and collaborate with us.</h3>
+            <h2 class="section-heading text-uppercase"><%= data.community %></h2>
+            <h3 class="section-subheading text-muted"><%= data.communitySubtext %></h3>
           </div>
         </div>
         <div class="row">
-          <% partners.forEach(function(partner) { %>
+          <% data.partners.forEach(function(partner) { %>
             <div class="col-sm-3">
               <div class="partner">
                 <img class="mx-auto" src=<%= partner.picture %> />

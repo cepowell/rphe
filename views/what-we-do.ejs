@@ -18,12 +18,16 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Our Beginnings</h2>
+            <h2 class="section-heading text-uppercase"><%= data.beginningsHeader %></h2>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-10 offset-lg-1">
-            <% include ./text/beginnings %>
+            <% data.beginningsText.forEach(function(paragraph) { %>
+              <p style="text-align: justify;">
+                <%= paragraph %>
+              </p>
+            <% }); %>
           </div>
         </div>
       </div>
@@ -37,11 +41,15 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">How We Innovate</h2>
+            <h2 class="section-heading text-uppercase"><%= data.innovateHeader %></h2>
           </div>
           <div class="row">
             <div class="col-lg-10 offset-lg-1">
-              <% include ./text/innovate %>
+              <% data.innovateText.forEach(function(paragraph) { %>
+                <p style="text-align: justify;">
+                  <%= paragraph %>
+                </p>
+              <% }); %>
             </div>
           </div>
         </div>
