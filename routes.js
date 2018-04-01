@@ -15,6 +15,14 @@ module.exports = function(app) {
       data: homeData.english_home,
       nav: navData.english_nav,
       footer: footerData.english_footer,
+      languages: [
+        { name: 'English',
+          url: '/',
+        },
+        { name: 'Spanish',
+          url: '/sp',
+        },
+      ],
     });
   });
 
@@ -24,6 +32,14 @@ module.exports = function(app) {
       data: homeData.spanish_home,
       nav: navData.spanish_nav,
       footer: footerData.spanish_footer,
+      languages: [
+        { name: 'Inglés',
+          url: '/',
+        },
+        { name: 'Español',
+          url: '/sp',
+        },
+      ],
     });
   });
 
@@ -33,6 +49,14 @@ module.exports = function(app) {
       data: whatWeDo.english_whatwedo,
       nav: navData.english_nav,
       footer: footerData.english_footer,
+      languages: [
+        { name: 'English',
+          url: '/what-we-do',
+        },
+        { name: 'Spanish',
+          url: '/sobre-nosotros',
+        },
+      ],
     });
   });
 
@@ -42,6 +66,14 @@ module.exports = function(app) {
       data: whatWeDo.spanish_whatwedo,
       nav: navData.spanish_nav,
       footer: footerData.spanish_footer,
+      languages: [
+        { name: 'Inglés',
+          url: '/what-we-do',
+        },
+        { name: 'Español',
+          url: '/sobre-nosotros',
+        },
+      ],
     });
   });
 
@@ -51,6 +83,14 @@ module.exports = function(app) {
       data: whoWeAre.english_whoweare,
       nav: navData.english_nav,
       footer: footerData.english_footer,
+      languages: [
+        { name: 'English',
+          url: '/who-we-are',
+        },
+        { name: 'Spanish',
+          url: '/nuestro-equipo',
+        },
+      ],
     });
   });
 
@@ -60,6 +100,14 @@ module.exports = function(app) {
       data: whoWeAre.spanish_whoweare,
       nav: navData.spanish_nav,
       footer: footerData.spanish_footer,
+      languages: [
+        { name: 'Inglés',
+          url: '/who-we-are',
+        },
+        { name: 'Español',
+          url: '/nuestro-equipo',
+        },
+      ],
     });
   });
 
@@ -70,6 +118,14 @@ module.exports = function(app) {
       data: gallery.english_gallery,
       nav: navData.english_nav,
       footer: footerData.english_footer,
+      languages: [
+        { name: 'English',
+          url: '/gallery',
+        },
+        { name: 'Spanish',
+          url: '/galeria',
+        },
+      ],
     });
   });
 
@@ -80,6 +136,14 @@ module.exports = function(app) {
       data: gallery.spanish_gallery,
       nav: navData.spanish_nav,
       footer: footerData.spanish_footer,
+      languages: [
+        { name: 'Inglés',
+          url: '/gallery',
+        },
+        { name: 'Español',
+          url: '/galeria',
+        },
+      ],
     });
   });
 
@@ -89,6 +153,14 @@ module.exports = function(app) {
       data: stories.english_stories,
       nav: navData.english_nav,
       footer: footerData.english_footer,
+      languages: [
+        { name: 'English',
+          url: '/stories',
+        },
+        { name: 'Spanish',
+          url: '/historias',
+        },
+      ],
     });
   });
 
@@ -98,6 +170,14 @@ module.exports = function(app) {
       data: stories.spanish_stories,
       nav: navData.spanish_nav,
       footer: footerData.spanish_footer,
+      languages: [
+        { name: 'Inglés',
+          url: '/stories',
+        },
+        { name: 'Español',
+          url: '/historias',
+        },
+      ],
     });
   });
 }

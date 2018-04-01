@@ -10,7 +10,7 @@
         <span class="language-option"> <%= nav.choose %> </span>
       </button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <% nav.languages.forEach(function(lang) { %>
+        <% languages.forEach(function(lang) { %>
           <a class="dropdown-item language-option" href=<%= lang.url %>><%= lang.name %></a>
         <% }); %>
       </div>

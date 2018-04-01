@@ -1,7 +1,7 @@
 {
   "name": "rphe",
   "version": "1.0.0",
-  "description": "Roatán Peer Health Exchange nonprofit organization website",
+  "description": "Roatán Peer Health Exchange, a Honduran-based reproductive peer health program.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

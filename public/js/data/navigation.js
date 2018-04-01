@@ -1,13 +1,5 @@
 var english_nav = {
   choose: 'Choose Your Language',
-  languages: [
-    { name: 'English',
-      url: '/',
-    },
-    { name: 'Spanish',
-      url: '/sp',
-    },
-  ],
   controls: [
     { name: 'Home',
       url: '/',
@@ -29,14 +21,6 @@ var english_nav = {
 
 var spanish_nav = {
   choose: 'Elija Su Idioma',
-  languages: [
-    { name: 'Inglés',
-      url: '/',
-    },
-    { name: 'Español',
-      url: '/sp',
-    },
-  ],
   controls: [
     { name: 'Inicio',
       url: '/sp',
