@@ -190,7 +190,7 @@ header.what-we-do {
   text-align: center;
   color: #fed136;
   text-shadow: 1px 1px #212529;
-  background-image: url("../img/flyers.jpg");
+  background-image: url("../img/what-we-do-top.jpg");
   height: 500px;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -225,7 +225,7 @@ header.who-we-are {
   text-align: center;
   color: #fed136;
   text-shadow: 1px 1px #212529;
-  background-image: url("../img/classroom.jpg");
+  background-image: url("../img/who-we-are-top.jpg");
   height: 500px;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -260,7 +260,7 @@ header.gallery {
   text-align: center;
   color: #fed136;
   text-shadow: 1px 1px #212529;
-  background-image: url("../img/color-sheets.jpg");
+  background-image: url("../img/gallery-top.jpg");
   height: 500px;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -332,7 +332,7 @@ header.stories {
 }
 
 .middle-banner-1 {
-  background-image: url("../img/tableconvo.jpg");
+  background-image: url("../img/home-middle.jpg");
   height: 500px;
   width: 100%;
   background-repeat: no-repeat;
@@ -345,7 +345,7 @@ header.stories {
 }
 
 .middle-banner-2 {
-  background-image: url("../img/tableconvo2.jpg");
+  background-image: url("../img/home-bottom.jpg");
   height: 500px;
   width: 100%;
   background-repeat: no-repeat;
